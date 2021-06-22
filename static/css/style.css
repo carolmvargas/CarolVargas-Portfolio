@@ -1,12 +1,91 @@
 body {
-    background-color: pink;
-    
-}
-#navegation {
-    height:1000px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
-.section {
-    height: ;
-    padding-top: ;
+#navegation {
+    height: 250px;
 }
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+h1 {
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    font-weight: ;
+    
+}
+h1 p {
+    color:#d962af;
+    font-weight: normal;
+}
+#navegation a {
+
+    display: flex;
+    color:honeydew;
+    text-decoration: none;
+    background-color: black;
+    padding: 15px 10px 15px 20px;
+    border: 3px solid white;
+
+}
+#navegation a:hover {
+    color:#d962af; 
+    font-weight: bold;
+}
+.foto {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+.foto img {
+    border-radius: 200px;
+    border: 3px dashed #d962af;
+    
+}
+h2 {
+    text-align: center;
+}
+.section {
+    text-align: center;
+}
+
+#portfolio img {
+    width: 100%;
+    border: 3px dashed #d962af;
+    text-align: center;
+    margin-top:20px;
+
+
+}
+#skills > div  {
+    border: 3px solid grey;
+    background-color: white;
+    border-radius: 10px;
+} 
+
+#skills #html {
+    border: 10px solid #d962af;
+    border-radius: 10px;
+    margin-right: 150px;
+}
+
+#skills #css {
+    border: 10px solid #d962af;
+    border-radius: 10px;
+    margin-right: 200px;
+}
+#skills #java {
+    border: 10px solid #d962af;
+    border-radius: 10px;
+    margin-right: 500px;
+}
+#kontakt a {
+    text-decoration: none;
+    color:black;
+}
+#kontakt ion-icon {
+    color:#d962af;
+    
+
