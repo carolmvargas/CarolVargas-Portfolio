@@ -12,13 +12,13 @@ ul {
 }
 h1 {
     text-align: center;
-    padding: 20px 0px 20px 0px;
-    font-weight: ;
-    
+    padding: 20px;
 }
 h1 p {
     color:#d962af;
     font-weight: normal;
+    margin:0;
+    font-size: 80%;
 }
 #navegation a {
 
@@ -53,12 +53,17 @@ h2 {
 
 #portfolio img {
     width: 100%;
-    border: 3px dashed #d962af;
-    text-align: center;
-    margin-top:20px;
-
-
 }
+
+#portfolio div {
+    border: 3px dashed #d962af;
+    margin: 20px 20px 20px 20px;
+}
+#portfolio a {
+    text-decoration: none;
+    color: black;
+}
+
 #skills > div  {
     border: 3px solid grey;
     background-color: white;
@@ -84,8 +89,9 @@ h2 {
 #kontakt a {
     text-decoration: none;
     color:black;
+    vertical-align: 15px;
 }
 #kontakt ion-icon {
     color:#d962af;
-    
-
+    font-size: 40px;
+}
