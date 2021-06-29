@@ -35,6 +35,7 @@ h1 p {
     margin-top: 3em;
 }
 .foto img {
+    width: 20em;
     border-radius: 50em;
     border: .4em dashed #d962af;  
 }
