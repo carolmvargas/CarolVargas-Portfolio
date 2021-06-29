@@ -93,9 +93,12 @@ h1 p {
     vertical-align: .7em;
     text-align:right;
 }
-#kontakt ion-icon {
+#kontakt a > ion-icon {
+    vertical-align: -.3em;
+    padding: 0em .2em;
     color:#d962af;
     font-size: 2em;
+    text-align: left;
 }
 #kontakt div {
     display: block;
