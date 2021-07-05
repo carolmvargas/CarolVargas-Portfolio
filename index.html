@@ -12,84 +12,102 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet"> 
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 
 </head>
 <body>
-    <div class=foto>
-        <img src="./static/carol maria mellos.jpg" alt="Foto von Caro" width="200">
-    </div>
-    <h1>Caroline Vargas<p>Web Developer</p></h1>
-    <div id="navegation"> <!--link de navegacao-->
-        <ul>
-            <li>
-                <a href="#lebenslauf">Lebenslauf</a>
-            </li>
-            <li>
-                <a href="#portfolio">Portfolio</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#kontakt">Kontakt</a>
-            </li>
-        </ul>
-    </div>
-
-    <div class="section" id="lebenslauf">
-        <h2>Lebenslauf</h2> 
-        <p>DCI Schülerin</p><!--download link-->
-        <a href="./static/downloads/CAROLINE MELLO VARGAS-CV DEUTSCH.pdf" download="CV-CAROL VARGAS">CV (Download)</a>
-    </div>
-    <div class="section" id="portfolio">
-        <h2>Portfolio</h2>
-            <div>
-                <a href="https://carowebdeveloper.netlify.app" target="_blank" title="Caro Portfolio"><img src="./static/caroportfolio.png" alt="Caro Portfolio">Caro Portfolio</a>
-            </div>
-            <div>
-                <a href="https://caro-v-schmuckketten-design.jimdosite.com/" target="_blank"title="Caro Hundeschmuck-CMS"><img src="./static/carov-cms.png" alt="Caro Hundeschmuck-CMS"> Caro V Hundeschmuck - CMS</a>
-            </div>
-        <p> </p>
-    </div>
-    <div class="section" id="skills">
-        <h2>Skills</h2>
-            <p>HTML</p>
-                <div>
-                    <div id="html"></div>
-                </div>
-            <p>CSS</p>
-                <div>
-                    <div id="css"></div>
-                </div>
-            <p>JavaScript</p>
-                <div>
-                    <div id="java"></div>
-                </div>
-
-    </div>
-    <div class="section" id="kontakt">
-        <h2>Kontakt</h2>
-        <div>
+    <header>
+        <picture class=foto>
+            <img src="./static/carol maria mellos.jpg" alt="Foto von Caro" width="200">
+        </picture>
+        <h1>Caroline Vargas<p>Web Developer</p></h1>
+        <nav id="navegation"> <!--link de navegacao-->
+            <ul>
+                <li>
+                    <a href="#lebenslauf">Lebenslauf</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#kontakt">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="lebenslauf">
+            <h2>Lebenslauf</h2> 
+            <p>DCI Schülerin</p><!--download link-->
+            <a href="./static/downloads/CAROLINE MELLO VARGAS-CV DEUTSCH.pdf" download="CV-CAROL VARGAS">CV (Download)</a>
+        </section>
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <article>
+                <a href="https://carowebdeveloper.netlify.app" target="_blank" title="Caro Portfolio">
+                    <figure>
+                        <img src="./static/caroportfolio.png" alt="Caro Portfolio">
+                    </figure>
+                    <figurecaption>Caro Portfolio</figurecaption>
+                </a>
+            </article>
+            <article>
+                <a href="https://caro-v-schmuckketten-design.jimdosite.com/" target="_blank"title="Caro Hundeschmuck-CMS">
+                    <figure>
+                        <img src="./static/carov-cms.png" alt="Caro Hundeschmuck-CMS">
+                    </figure>
+                    <figurecaption>Caro V Hundeschmuck Design - CMS</figurecaption>
+                </a>
+            </article>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+                <article>
+                    <p>HTML</p>
+                        <div>
+                            <div id="html"></div>
+                        </div>
+                </article>
+                <article>
+                    <p>CSS</p>
+                        <div>
+                            <div id="css"></div>
+                        </div>
+                </article>
+                <article>
+                    <p>JavaScript</p>
+                    <div>
+                        <div id="java"></div>
+                    </div>
+                </article>
+        </section>
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <article>
             <!--email link-->
-            <a href="mailto:carolmvargas0@gmail.com"><ion-icon name="mail-sharp"></ion-icon>@carolmvargas0@gmail.com</a>
-        </div>
-        <div>
+                <a href="mailto:carolmvargas0@gmail.com"><ion-icon name="mail-sharp"></ion-icon>@carolmvargas0@gmail.com</a>
+            </article>
+            <article>
             <!--anrufen link-->
-            <a href="tel:+491745211131"><ion-icon name="call-sharp"></ion-icon>+49 174 5211131</a>
-        </div>
-        <div>
-            <a href="http://instagram.com/carolmvargas"target="_blank"><ion-icon name="logo-instagram"></ion-icon>Instagram</a>
-        </div>
-        <div>
-            <a href="https://www.facebook.com/caroline.vargas.75"target="_blank"><ion-icon name="logo-facebook"></ion-icon>Facebook</a>
-        </div>
-        <div>
-            <a href="https://www.linkedin.com/caroline-mello-vargas-794b6578"target="_blank"><ion-icon name="logo-linkedin"></ion-icon>Linkedin</a>
-        </div>
-        <div>
-            <a href="http://github.com/carolmvargas"target="_blank"><ion-icon name="logo-github"></ion-icon>GitHub</a>
-        </div>
-    </div>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+                <a href="tel:+491745211131"><ion-icon name="call-sharp"></ion-icon>+49 174 5211131</a>
+            </article>
+            <article>
+                <a href="http://instagram.com/carolmvargas"target="_blank"><ion-icon name="logo-instagram"></ion-icon>Instagram</a>
+            </article>
+            <article>
+                <a href="https://www.facebook.com/caroline.vargas.75"target="_blank"><ion-icon name="logo-facebook"></ion-icon>Facebook</a>
+            </article>
+            <article>
+                <a href="https://www.linkedin.com/caroline-mello-vargas-794b6578"target="_blank"><ion-icon name="logo-linkedin"></ion-icon>Linkedin</a>
+            </article>
+            <article>
+                <a href="http://github.com/carolmvargas"target="_blank"><ion-icon name="logo-github"></ion-icon>GitHub</a>
+            </article>
+        </section>
+    </main>
+    <footer>&copy; 2021 CarolineMelloVargas. All rights reserved</footer>
 </body>
 

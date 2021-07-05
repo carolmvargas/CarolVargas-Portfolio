@@ -35,7 +35,7 @@ h1 p {
     margin-top: 3em;
 }
 .foto img {
-    width: 20em;
+    width: 20rem;
     border-radius: 50em;
     border: .4em dashed #d962af;  
 }
@@ -54,26 +54,30 @@ h1 p {
     color:#d962af;
     font-weight: bold;
 }
-.section {
+section {
     margin-top: 3em;
     font-size: 1.3em;
 }
 #portfolio img {
     width: 100%;
 }
-#portfolio div {
+main {
+    padding:0 .5em;
+}
+#portfolio article {
     border: .2em dashed #d962af;
-    margin: 1em;
+    margin:1em auto;
+    max-width: 50em;  
 }
 #portfolio a {
     text-decoration: none;
-    color: black;
+    color: black;  
 }
-#skills > div  {
+#skills article > div  {
     border:.1em solid grey;
     background-color: white;
     border-radius: 10em;
-    margin:0em 1em;     
+    margin:0em 1em;    
 } 
 #skills #html {
     border: .6em solid #d962af;
@@ -103,7 +107,15 @@ h1 p {
     font-size: 2em;
     text-align: left;
 }
-#kontakt div {
+#kontakt article {
     display: block;
     text-align: left;
+}
+footer {
+    border-top:3px solid #d962af; 
+    padding-top: 1em;
+    margin-top:2em;
+}
+figure {
+    margin:0;
 }
