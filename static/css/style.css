@@ -119,3 +119,31 @@ footer {
 figure {
     margin:0;
 }
+form label,input,button,textarea {
+    display: block;
+    border-radius: .5em;
+    padding: .5em;  
+}
+textarea{
+    min-width: 17em;
+}
+fieldset {
+    max-width: 50em;
+    border: 3px dashed #d962af;
+    margin: 1em;   
+}   
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+button {
+    background-color:#d962af ;
+    border:none;
+    color:white;
+    font-size: 1em;
+    margin: 1em 0em;
+    padding: .5em .7em;
+}
+button:hover {
+    background-color: #d962af85;  
+}
