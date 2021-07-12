@@ -147,3 +147,24 @@ button {
 button:hover {
     background-color: #d962af85;  
 }
+#navegation a::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f105";
+    color:#d962af;
+    position: absolute;
+    right:2em;
+}
+@media screen and (min-width: 500px) {
+    #navegation ul {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+
+    } 
+    #navegation a {
+        border:none;
+    }
+    #navegation a::after {
+        content: "";
+    }
