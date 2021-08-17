@@ -1,170 +1,210 @@
+@charset "UTF-8";
 body {
-    font-family: 'Nunito', sans-serif;
-    text-align: center;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
 }
+
 ul {
-    padding: 0;
-    list-style-type: none;
+  list-style: none;
+  padding: 0;
 }
+
 h1 {
-    padding:1em;
+  padding: 1em;
 }
 h1 p {
-    font-family: 'Cutive Mono', monospace;
-    color:#d962af;
-    font-weight:normal;
-    margin:0;
+  font-family: "Cutive Mono", monospace;
+  color: #d962af;
+  font-weight: normal;
+  margin: 0;
 }
+
 #navegation a {
-    display: block;
-    color:honeydew;
-    text-decoration: none;
-    background-color: black;
-    padding: .7em;
-    border: .2em solid white;
-    font-size: 1.3em;
-    text-align: left;
+  display: block;
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  padding: 0.7em;
+  border: 0.2em solid white;
+  font-size: 1.3em;
+  text-align: left;
 }
 #navegation a:hover {
-    color:#d962af; 
-    font-weight: bold;
-}
-.foto {
-    display: flex;
-    justify-content: center;
-    margin-top: 3em;
-}
-.foto img {
-    width: 20rem;
-    border-radius: 50em;
-    border: .4em dashed #d962af;  
-}
-#lebenslauf a {
-    background-color:#d962af;
-    border-radius: 50em;
-    padding: .7em 1em;
-    color:white;
-    text-decoration: none;
-    margin-top:1em;
-    display: inline-block;
-}
-#lebenslauf a:hover {
-    background-color: white;
-    border: .1em solid #d962af;
-    color:#d962af;
-    font-weight: bold;
-}
-section {
-    margin-top: 3em;
-    font-size: 1.3em;
-}
-#portfolio img {
-    width: 100%;
-}
-main {
-    padding:0 .5em;
-}
-#portfolio article {
-    border: .2em dashed #d962af;
-    margin:1em auto;
-    max-width: 50em;  
-}
-#portfolio a {
-    text-decoration: none;
-    color: black;  
-}
-#skills article > div  {
-    border:.1em solid grey;
-    background-color: white;
-    border-radius: 10em;
-    margin:0em 1em;    
-} 
-#skills #html {
-    border: .6em solid #d962af;
-    border-radius: 10em;
-    margin-right:30%;
-}
-#skills #css {
-    border: .6em solid #d962af;
-    border-radius: 10em;
-    margin-right: 50%;
-}
-#skills #java {
-    border: .6em solid #d962af;
-    border-radius: 10em;
-    margin-right: 95%;
-}
-#kontakt a {
-    text-decoration: none;
-    color:black;
-    vertical-align: .7em;
-    text-align:right;
-}
-#kontakt a > ion-icon {
-    vertical-align: -.3em;
-    padding: 0em .2em;
-    color:#d962af;
-    font-size: 2em;
-    text-align: left;
-}
-#kontakt article {
-    display: block;
-    text-align: left;
-}
-footer {
-    border-top:3px solid #d962af; 
-    padding-top: 1em;
-    margin-top:2em;
-}
-figure {
-    margin:0;
-}
-form label,input,button,textarea {
-    display: block;
-    border-radius: .5em;
-    padding: .5em;  
-}
-textarea{
-    min-width: 17em;
-}
-fieldset {
-    max-width: 50em;
-    border: 3px dashed #d962af;
-    margin: 1em;   
-}   
-legend {
-    font-size: 1.2em;
-    font-weight: bold;
-}
-button {
-    background-color:#d962af ;
-    border:none;
-    color:white;
-    font-size: 1em;
-    margin: 1em 0em;
-    padding: .5em .7em;
-}
-button:hover {
-    background-color: #d962af85;  
+  color: #d962af;
+  font-weight: bold;
 }
 #navegation a::after {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f105";
-    color:#d962af;
-    position: absolute;
-    right:2em;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  color: #d962af;
+  position: absolute;
+  right: 2em;
 }
-@media screen and (min-width: 500px) {
-    #navegation ul {
-        display: flex;
-        justify-content: center;
-        background-color: black;
 
-    } 
-    #navegation a {
-        border:none;
-    }
-    #navegation a::after {
-        content: "";
-    }
+.foto {
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+}
+.foto img {
+  width: 20rem;
+  border-radius: 50em;
+  border: 0.4em dashed #d962af;
+}
+
+#lebenslauf a {
+  background-color: #d962af;
+  border-radius: 50em;
+  padding: 0.7em 1em;
+  color: white;
+  text-decoration: none;
+  margin-top: 1em;
+  display: inline-block;
+}
+#lebenslauf a:hover {
+  background-color: white;
+  border: 0.1em solid #d962af;
+  color: #d962af;
+  font-weight: bold;
+}
+
+main {
+  padding: 0 0.5em;
+}
+main section {
+  margin-top: 3em;
+  font-size: 1.3em;
+}
+
+#portfolio article {
+  border: 0.2em dashed #d962af;
+  margin: 1em auto;
+  max-width: 50em;
+}
+#portfolio article a {
+  text-decoration: none;
+  color: black;
+}
+#portfolio article a figure {
+  margin: 0;
+}
+#portfolio article a figure img {
+  width: 100%;
+}
+
+#skills article div {
+  border: 0.1em solid grey;
+  background-color: white;
+  border-radius: 10em;
+}
+
+#skills #html {
+  border: 0.6em solid #d962af;
+  border-radius: 10em;
+  margin-right: 30%;
+}
+
+#skills #css {
+  border: 0.6em solid #d962af;
+  border-radius: 10em;
+  margin-right: 50%;
+}
+
+#skills #java {
+  border: 0.6em solid #d962af;
+  border-radius: 10em;
+  margin-right: 95%;
+}
+
+#kontakt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#kontakt a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+#kontakt a ion-icon {
+  padding: 0.2em;
+  color: #d962af;
+  font-size: 2em;
+}
+
+label {
+  padding-top: 0.5em;
+}
+
+input, button, textarea {
+  border-radius: 0.5em;
+  padding: 0.5em;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  background-color: #d962af;
+}
+
+textarea, input {
+  min-width: 17em;
+}
+
+fieldset {
+  margin: 3em;
+  border: 3px dashed #d962af;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0em 1em;
+  text-align: left;
+}
+fieldset div {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  margin: auto;
+}
+
+legend {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+button {
+  background-color: #d962af;
+  border: none;
+  color: white;
+  font-size: 1em;
+  margin: 1em 0em;
+  padding: 0.5em 0.7em;
+  align-self: center;
+}
+
+button:hover {
+  background-color: #d962af85;
+}
+
+footer {
+  border-top: 3px solid #d962af;
+  padding-top: 1em;
+  margin-top: 2em;
+}
+
+@media screen and (min-width: 480px) {
+  #navegation ul {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+  }
+  #navegation a {
+    border: none;
+  }
+  #navegation a::after {
+    content: "";
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

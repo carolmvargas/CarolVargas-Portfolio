@@ -1,0 +1,219 @@
+@use "sass:map";
+//variables
+$breakpoints: (
+    "mobile":480px,
+    "tablet":768px,
+    "desktop":1024px,
+);
+$colors: (
+    "primary":#d962af,
+    "secondary":grey,
+    "black":black,
+    "white":white,
+);
+@mixin list-reset {
+    list-style:none;
+    padding:0;
+}
+@mixin foto {
+    border-radius: 50em;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+ul {
+    @include list-reset;
+}
+h1 {
+    padding:1em;
+    p {
+        font-family: 'Cutive Mono', monospace;
+        color: map.get($colors, "primary");
+        font-weight:normal;
+        margin:0;
+    }
+}
+#navegation {
+    a {
+        display: block;
+        color:map.get($colors, "white");
+        text-decoration: none;
+        background-color: map.get($colors, "black");
+        padding: .7em;
+        border: .2em solid map.get($colors, "white");
+        font-size: 1.3em;
+        text-align: left;
+    }
+    a:hover {
+        color: map.get($colors, "primary");
+        font-weight: bold;
+    }
+    a::after {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f105";
+        color:map.get($colors, "primary");
+        position: absolute;
+        right:2em;
+    }
+}
+.foto {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    img {
+        width: 20rem;
+        @include foto;
+        border: .4em dashed map.get($colors, "primary");
+    } 
+}
+#lebenslauf {
+    a {
+        background-color: map.get($colors, "primary");
+        border-radius: 50em;
+        padding: .7em 1em;
+        color:map.get($colors, "white");
+        text-decoration: none;
+        margin-top:1em;
+        display: inline-block;
+        &:hover {
+            background-color: map.get($colors, "white");
+            border: .1em solid map.get($colors, "primary");
+            color:map.get($colors, "primary");
+            font-weight: bold;
+        }
+    }
+}
+main {
+    padding:0 .5em;
+    section {
+    margin-top: 3em;
+    font-size: 1.3em;
+    }
+}
+#portfolio {
+    article {
+        border: .2em dashed map.get($colors, "primary");
+        margin:1em auto;
+        max-width: 50em;
+        a {
+            text-decoration: none;
+            color: black;  
+            figure {
+                margin:0;
+                img {
+                    width: 100%;
+                } 
+            }
+        }   
+    }
+}
+#skills {
+    article {
+        div  {
+            border:.1em solid map.get($colors, "secondary");
+            background-color: map.get($colors, "white");
+            border-radius: 10em;
+        }
+    }
+}
+#skills #html {
+    border: .6em solid map.get($colors, "primary");
+    border-radius: 10em;
+    margin-right:30%;
+}
+#skills #css {
+    border: .6em solid map.get($colors, "primary");
+    border-radius: 10em;
+    margin-right: 50%;
+}
+#skills #java {
+    border: .6em solid map.get($colors, "primary");
+    border-radius: 10em;
+    margin-right: 95%;
+}
+#kontakt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color:black;
+        ion-icon {
+            padding: .2em;
+            color:map.get($colors, "primary");
+            font-size: 2em;
+        }
+    }
+}
+label {
+    padding-top:.5em; 
+}
+input,button,textarea {
+    border-radius: .5em;
+    padding:.5em;  
+}
+input:focus, 
+textarea:focus {
+    outline:none;
+    background-color: map.get($colors, "primary");
+}
+textarea, input {
+    min-width: 17em;
+}
+fieldset {
+    margin:3em;
+    border: 3px dashed map.get($colors, "primary"); 
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0em 1em;
+    text-align: left;
+    div {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        margin:auto;
+    }
+}   
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+button {
+    background-color:map.get($colors, "primary");
+    border:none;
+    color:white;
+    font-size: 1em;
+    margin: 1em 0em;
+    padding: .5em .7em;
+    align-self: center;
+}
+button {
+    &:hover {
+    background-color: #d962af85;  
+    }
+}
+footer {
+    border-top:3px solid map.get($colors, "primary"); 
+    padding-top: 1em;
+    margin-top:2em;
+}
+@media screen and (min-width: map.get($breakpoints, "mobile")) {
+    #navegation  {
+        ul {
+            display: flex;
+            justify-content: center;
+            background-color: black;
+        } 
+        a {
+            border:none;
+            &::after {
+            content: "";
+            }
+        }
+    }
+}
+

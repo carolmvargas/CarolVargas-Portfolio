@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  
+ "scripts": {
+   "start": "sass static/scss/style.scss static/css/style.css --watch",
+  "test": "echo \"Error: no test specified\" && exit 1"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carolmvargas/CarolVargas-Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carolmvargas/CarolVargas-Portfolio/issues"
+  },
+  "homepage": "https://github.com/carolmvargas/CarolVargas-Portfolio#readme"
+}
